@@ -1,4 +1,4 @@
-package com.umnicode.samp_launcher.core.SAMP.Components.ArchiveSystem.ExtractTaskFile
+package com.terfess.samp_launcher.core.SAMP.Components.ArchiveSystem.ExtractTaskFile
 
 import java.io.File
 

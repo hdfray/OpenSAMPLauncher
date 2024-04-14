@@ -1,4 +1,4 @@
-package com.umnicode.samp_launcher.core
+package com.terfess.samp_launcher.core
 
 open interface ServerResolveCallback {
     fun OnFinish(OutConfig: ServerConfig?)

@@ -1,8 +1,8 @@
-package com.umnicode.samp_launcher
+package com.terfess.samp_launcher
 
 import android.content.Context
 import com.google.gson.Gson
-import com.umnicode.samp_launcher.core.ServerConfig
+import com.terfess.samp_launcher.core.ServerConfig
 
 class UserConfig internal constructor(
     private val _Context: Context,

@@ -1,4 +1,4 @@
-package com.umnicode.samp_launcher.core.SAMP.Components
+package com.terfess.samp_launcher.core.SAMP.Components
 
 import android.os.AsyncTask
 

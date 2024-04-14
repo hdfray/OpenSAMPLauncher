@@ -1,4 +1,4 @@
-package com.umnicode.samp_launcher.core
+package com.terfess.samp_launcher.core
 
 import android.content.Context
 import android.content.res.Resources
@@ -6,8 +6,8 @@ import android.util.AttributeSet
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
-import com.umnicode.samp_launcher.R
-import com.umnicode.samp_launcher.core.SAMP.Enums.ServerStatus
+import com.terfess.samp_launcher.R
+import com.terfess.samp_launcher.core.SAMP.Enums.ServerStatus
 
 class ServerView : LinearLayout {
     private var RootView: View? = null

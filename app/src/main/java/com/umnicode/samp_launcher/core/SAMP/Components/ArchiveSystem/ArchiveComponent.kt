@@ -1,9 +1,9 @@
-package com.umnicode.samp_launcher.core.SAMP.Components.ArchiveSystem
+package com.terfess.samp_launcher.core.SAMP.Components.ArchiveSystem
 
-import com.umnicode.samp_launcher.core.SAMP.Components.ArchiveSystem.ExtractTaskFile.ExtractTaskFileInit
-import com.umnicode.samp_launcher.core.SAMP.Components.AsyncTaskContainer
-import com.umnicode.samp_launcher.core.SAMP.Components.TaskStatus
-import com.umnicode.samp_launcher.core.Utils.GetFileLastExtension
+import com.terfess.samp_launcher.core.SAMP.Components.ArchiveSystem.ExtractTaskFile.ExtractTaskFileInit
+import com.terfess.samp_launcher.core.SAMP.Components.AsyncTaskContainer
+import com.terfess.samp_launcher.core.SAMP.Components.TaskStatus
+import com.terfess.samp_launcher.core.Utils.GetFileLastExtension
 import java.io.File
 
 object ArchiveComponent {

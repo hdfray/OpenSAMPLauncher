@@ -1,4 +1,4 @@
-package com.umnicode.samp_launcher.ui.widgets.playbutton
+package com.terfess.samp_launcher.ui.widgets.playbutton
 
 interface SAMPLaunchCallback {
     fun Launch()

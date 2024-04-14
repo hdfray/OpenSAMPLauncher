@@ -1,4 +1,4 @@
-package com.umnicode.samp_launcher.ui.home
+package com.terfess.samp_launcher.ui.home
 
 import android.text.InputFilter
 import android.text.Spanned

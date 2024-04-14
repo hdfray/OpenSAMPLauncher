@@ -1,7 +1,7 @@
-package com.umnicode.samp_launcher.core.SAMP.Components.DownloadSystem
+package com.terfess.samp_launcher.core.SAMP.Components.DownloadSystem
 
-import com.umnicode.samp_launcher.core.SAMP.Components.TaskFileStatus
-import com.umnicode.samp_launcher.core.SAMP.Components.TaskStatus
+import com.terfess.samp_launcher.core.SAMP.Components.TaskFileStatus
+import com.terfess.samp_launcher.core.SAMP.Components.TaskStatus
 
 // Non-public wrapper for DownloadTask that own this callback
 class DownloadTaskCallbackOwner {

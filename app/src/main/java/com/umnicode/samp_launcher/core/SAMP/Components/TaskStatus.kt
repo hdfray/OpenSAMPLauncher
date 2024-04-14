@@ -1,4 +1,4 @@
-package com.umnicode.samp_launcher.core.SAMP.Components
+package com.terfess.samp_launcher.core.SAMP.Components
 
 class TaskStatus(Done: Float, FullSize: Float, File: Int, FliesNumber: Int) {
     var Done = 0f

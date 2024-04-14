@@ -1,4 +1,4 @@
-package com.umnicode.samp_launcher.core.SAMP
+package com.terfess.samp_launcher.core.SAMP
 
 import android.content.Context
 import android.content.Intent
@@ -11,24 +11,23 @@ import android.os.Looper
 import android.util.Log
 import android.webkit.MimeTypeMap
 import androidx.core.content.FileProvider
-import com.umnicode.samp_launcher.MainActivity
-import com.umnicode.samp_launcher.PermissionRequestCallback
-import com.umnicode.samp_launcher.R
-import com.umnicode.samp_launcher.core.SAMP.Components.ArchiveSystem.ArchiveComponent
-import com.umnicode.samp_launcher.core.SAMP.Components.ArchiveSystem.ExtractTask
-import com.umnicode.samp_launcher.core.SAMP.Components.ArchiveSystem.ExtractTaskCallback
-import com.umnicode.samp_launcher.core.SAMP.Components.ArchiveSystem.ExtractTaskFile.ExtractTaskFile
-import com.umnicode.samp_launcher.core.SAMP.Components.ArchiveSystem.ExtractTaskFile.ExtractTaskFileInit
-import com.umnicode.samp_launcher.core.SAMP.Components.AsyncTaskContainer
-import com.umnicode.samp_launcher.core.SAMP.Components.DownloadSystem.DownloadComponent
-import com.umnicode.samp_launcher.core.SAMP.Components.DownloadSystem.DownloadTask
-import com.umnicode.samp_launcher.core.SAMP.Components.DownloadSystem.DownloadTaskCallback
-import com.umnicode.samp_launcher.core.SAMP.Components.TaskFileStatus
-import com.umnicode.samp_launcher.core.SAMP.Components.TaskStatus
-import com.umnicode.samp_launcher.core.SAMP.Enums.InstallStatus
-import com.umnicode.samp_launcher.core.SAMP.Enums.SAMPInstallerStatus
-import com.umnicode.samp_launcher.core.SAMP.Enums.SAMPPackageStatus
-import com.umnicode.samp_launcher.core.Utils
+import com.terfess.samp_launcher.R
+import com.terfess.samp_launcher.core.SAMP.Components.ArchiveSystem.ArchiveComponent
+import com.terfess.samp_launcher.core.SAMP.Components.ArchiveSystem.ExtractTask
+import com.terfess.samp_launcher.core.SAMP.Components.ArchiveSystem.ExtractTaskCallback
+import com.terfess.samp_launcher.core.SAMP.Components.ArchiveSystem.ExtractTaskFile.ExtractTaskFile
+import com.terfess.samp_launcher.core.SAMP.Components.ArchiveSystem.ExtractTaskFile.ExtractTaskFileInit
+import com.terfess.samp_launcher.core.SAMP.Components.AsyncTaskContainer
+import com.terfess.samp_launcher.core.SAMP.Components.DownloadSystem.DownloadComponent
+import com.terfess.samp_launcher.core.SAMP.Components.DownloadSystem.DownloadTask
+import com.terfess.samp_launcher.core.SAMP.Components.DownloadSystem.DownloadTaskCallback
+import com.terfess.samp_launcher.core.SAMP.Components.TaskFileStatus
+import com.terfess.samp_launcher.core.SAMP.Components.TaskStatus
+import com.terfess.samp_launcher.core.SAMP.Enums.InstallStatus
+import com.terfess.samp_launcher.core.SAMP.Enums.SAMPInstallerStatus
+import com.terfess.samp_launcher.core.SAMP.Enums.SAMPPackageStatus
+import com.terfess.samp_launcher.MainActivity
+import com.terfess.samp_launcher.core.Utils
 import java.io.File
 import java.util.Arrays
 

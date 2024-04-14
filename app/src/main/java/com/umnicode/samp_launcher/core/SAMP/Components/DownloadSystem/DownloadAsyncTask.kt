@@ -1,14 +1,14 @@
-package com.umnicode.samp_launcher.core.SAMP.Components.DownloadSystem
+package com.terfess.samp_launcher.core.SAMP.Components.DownloadSystem
 
 import android.os.Build
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
-import com.umnicode.samp_launcher.core.SAMP.Components.DefaultTask
-import com.umnicode.samp_launcher.core.SAMP.Components.ExtendedAsyncTask
-import com.umnicode.samp_launcher.core.SAMP.Components.TaskFileStatus
-import com.umnicode.samp_launcher.core.SAMP.Components.TaskStatus
-import com.umnicode.samp_launcher.core.Utils.RemoveFile
+import com.terfess.samp_launcher.core.SAMP.Components.DefaultTask
+import com.terfess.samp_launcher.core.SAMP.Components.ExtendedAsyncTask
+import com.terfess.samp_launcher.core.SAMP.Components.TaskFileStatus
+import com.terfess.samp_launcher.core.SAMP.Components.TaskStatus
+import com.terfess.samp_launcher.core.Utils.RemoveFile
 import java.io.BufferedInputStream
 import java.io.File
 import java.io.FileOutputStream

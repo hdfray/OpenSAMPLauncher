@@ -1,8 +1,8 @@
-package com.umnicode.samp_launcher.core.SAMP
+package com.terfess.samp_launcher.core.SAMP
 
-import com.umnicode.samp_launcher.core.SAMP.Components.TaskStatus
-import com.umnicode.samp_launcher.core.SAMP.Enums.InstallStatus
-import com.umnicode.samp_launcher.core.SAMP.Enums.SAMPInstallerStatus
+import com.terfess.samp_launcher.core.SAMP.Components.TaskStatus
+import com.terfess.samp_launcher.core.SAMP.Enums.InstallStatus
+import com.terfess.samp_launcher.core.SAMP.Enums.SAMPInstallerStatus
 
 interface SAMPInstallerCallback {
     fun OnStatusChanged(Status: SAMPInstallerStatus?)

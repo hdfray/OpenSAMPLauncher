@@ -1,4 +1,4 @@
-package com.umnicode.samp_launcher.ui.widgets.playbutton
+package com.terfess.samp_launcher.ui.widgets.playbutton
 
 enum class PlayButtonAction {
     SHOW_SERVER_INCORRECT, SHOW_DOWNLOAD_STATUS, SHOW_EXTRACT_STATUS,

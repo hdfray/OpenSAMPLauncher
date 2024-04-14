@@ -1,19 +1,19 @@
-package com.umnicode.samp_launcher.ui.widgets.playbutton
+package com.terfess.samp_launcher.ui.widgets.playbutton
 
 import android.content.Context
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatButton
-import com.umnicode.samp_launcher.LauncherApplication
-import com.umnicode.samp_launcher.R
-import com.umnicode.samp_launcher.core.SAMP.Components.TaskStatus
-import com.umnicode.samp_launcher.core.SAMP.Enums.InstallStatus
-import com.umnicode.samp_launcher.core.SAMP.Enums.SAMPInstallerStatus
-import com.umnicode.samp_launcher.core.SAMP.Enums.SAMPPackageStatus
-import com.umnicode.samp_launcher.core.SAMP.SAMPInstaller
-import com.umnicode.samp_launcher.core.SAMP.SAMPInstallerCallback
-import com.umnicode.samp_launcher.core.ServerConfig
-import com.umnicode.samp_launcher.core.Utils
-import com.umnicode.samp_launcher.ui.widgets.SAMP_InstallerView
+import com.terfess.samp_launcher.LauncherApplication
+import com.terfess.samp_launcher.R
+import com.terfess.samp_launcher.core.SAMP.Components.TaskStatus
+import com.terfess.samp_launcher.core.SAMP.Enums.InstallStatus
+import com.terfess.samp_launcher.core.SAMP.Enums.SAMPInstallerStatus
+import com.terfess.samp_launcher.core.SAMP.Enums.SAMPPackageStatus
+import com.terfess.samp_launcher.core.SAMP.SAMPInstaller
+import com.terfess.samp_launcher.core.SAMP.SAMPInstallerCallback
+import com.terfess.samp_launcher.core.ServerConfig
+import com.terfess.samp_launcher.core.Utils
+import com.terfess.samp_launcher.ui.widgets.SAMP_InstallerView
 
 class PlayButton : AppCompatButton {
     private var Action: PlayButtonAction? = null

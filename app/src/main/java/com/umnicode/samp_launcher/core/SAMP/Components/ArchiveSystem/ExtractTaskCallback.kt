@@ -1,8 +1,8 @@
-package com.umnicode.samp_launcher.core.SAMP.Components.ArchiveSystem
+package com.terfess.samp_launcher.core.SAMP.Components.ArchiveSystem
 
-import com.umnicode.samp_launcher.core.SAMP.Components.ArchiveSystem.ExtractTaskFile.ExtractTaskFile
-import com.umnicode.samp_launcher.core.SAMP.Components.TaskFileStatus
-import com.umnicode.samp_launcher.core.SAMP.Components.TaskStatus
+import com.terfess.samp_launcher.core.SAMP.Components.ArchiveSystem.ExtractTaskFile.ExtractTaskFile
+import com.terfess.samp_launcher.core.SAMP.Components.TaskFileStatus
+import com.terfess.samp_launcher.core.SAMP.Components.TaskStatus
 
 class ExtractTaskCallbackOwner {
     var Task: ExtractTask? = null

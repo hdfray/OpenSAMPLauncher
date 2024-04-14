@@ -1,4 +1,4 @@
-package com.umnicode.samp_launcher.core
+package com.terfess.samp_launcher.core
 
 import android.content.Context
 import android.os.Handler
@@ -12,7 +12,7 @@ import com.android.volley.toolbox.Volley
 import com.google.gson.JsonObject
 import com.google.gson.JsonParseException
 import com.google.gson.JsonParser
-import com.umnicode.samp_launcher.core.SAMP.Enums.ServerStatus
+import com.terfess.samp_launcher.core.SAMP.Enums.ServerStatus
 import java.io.IOException
 import java.net.InetAddress
 import java.net.InetSocketAddress

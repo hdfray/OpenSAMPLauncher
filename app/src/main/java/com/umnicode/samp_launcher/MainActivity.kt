@@ -1,4 +1,4 @@
-package com.umnicode.samp_launcher
+package com.terfess.samp_launcher
 
 import android.Manifest
 import android.content.pm.ActivityInfo

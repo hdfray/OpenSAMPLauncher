@@ -1,7 +1,7 @@
-package com.umnicode.samp_launcher.core.SAMP.Components.DownloadSystem
+package com.terfess.samp_launcher.core.SAMP.Components.DownloadSystem
 
-import com.umnicode.samp_launcher.core.SAMP.Components.DefaultTask
-import com.umnicode.samp_launcher.core.SAMP.Components.TaskStatus
+import com.terfess.samp_launcher.core.SAMP.Components.DefaultTask
+import com.terfess.samp_launcher.core.SAMP.Components.TaskStatus
 import java.io.File
 import java.net.URL
 

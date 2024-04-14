@@ -1,8 +1,8 @@
-package com.umnicode.samp_launcher.core.SAMP.Components.DownloadSystem
+package com.terfess.samp_launcher.core.SAMP.Components.DownloadSystem
 
-import com.umnicode.samp_launcher.core.SAMP.Components.AsyncTaskContainer
-import com.umnicode.samp_launcher.core.SAMP.Components.TaskStatus
-import com.umnicode.samp_launcher.core.Utils.DeepCloneObject
+import com.terfess.samp_launcher.core.SAMP.Components.AsyncTaskContainer
+import com.terfess.samp_launcher.core.SAMP.Components.TaskStatus
+import com.terfess.samp_launcher.core.Utils.DeepCloneObject
 import java.io.File
 import java.net.MalformedURLException
 import java.net.URL

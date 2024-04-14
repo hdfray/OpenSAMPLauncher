@@ -1,4 +1,4 @@
-package com.umnicode.samp_launcher.core
+package com.terfess.samp_launcher.core
 
 import android.util.Log
 import java.io.File

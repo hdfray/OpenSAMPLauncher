@@ -41,7 +41,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.081" />
 
-    <com.umnicode.samp_launcher.ui.widgets.playbutton.PlayButton
+    <com.terfess.samp_launcher.ui.widgets.playbutton.PlayButton
         android:id="@+id/play_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -145,7 +145,7 @@
         app:layout_constraintTop_toBottomOf="@+id/nickname"
         app:layout_constraintVertical_bias="0.0" />
 
-    <com.umnicode.samp_launcher.core.ServerView
+    <com.terfess.samp_launcher.core.ServerView
         android:id="@+id/server_view"
         android:layout_width="0dp"
         android:layout_height="0dp"

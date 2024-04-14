@@ -1,4 +1,4 @@
-package com.umnicode.samp_launcher.ui.home
+package com.terfess.samp_launcher.ui.home
 
 
 import android.content.Context
@@ -15,13 +15,13 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
-import com.umnicode.samp_launcher.LauncherApplication
-import com.umnicode.samp_launcher.R
-import com.umnicode.samp_launcher.UserConfig
-import com.umnicode.samp_launcher.core.ServerConfig
-import com.umnicode.samp_launcher.core.ServerResolveCallback
-import com.umnicode.samp_launcher.core.ServerView
-import com.umnicode.samp_launcher.ui.widgets.playbutton.PlayButton
+import com.terfess.samp_launcher.LauncherApplication
+import com.terfess.samp_launcher.R
+import com.terfess.samp_launcher.UserConfig
+import com.terfess.samp_launcher.core.ServerConfig
+import com.terfess.samp_launcher.core.ServerResolveCallback
+import com.terfess.samp_launcher.core.ServerView
+import com.terfess.samp_launcher.ui.widgets.playbutton.PlayButton
 
 class HomeFragment : Fragment() {
     private lateinit var rootView: View

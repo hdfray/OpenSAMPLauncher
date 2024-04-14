@@ -1,6 +1,6 @@
-package com.umnicode.samp_launcher.core.SAMP.Components.ArchiveSystem.ExtractTaskFile
+package com.terfess.samp_launcher.core.SAMP.Components.ArchiveSystem.ExtractTaskFile
 
-import com.umnicode.samp_launcher.core.SAMP.Components.TaskFileStatus
+import com.terfess.samp_launcher.core.SAMP.Components.TaskFileStatus
 import java.io.File
 
 class ExtractTaskFile {

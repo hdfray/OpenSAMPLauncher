@@ -1,8 +1,8 @@
-package com.umnicode.samp_launcher
+package com.terfess.samp_launcher
 
 import android.app.Application
 import android.content.Context
-import com.umnicode.samp_launcher.core.SAMP.SAMPInstaller
+import com.terfess.samp_launcher.core.SAMP.SAMPInstaller
 
 
 class LauncherApplication : Application() {
