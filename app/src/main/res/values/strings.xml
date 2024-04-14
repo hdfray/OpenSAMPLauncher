@@ -51,8 +51,8 @@
     <string name="app_root_directory_name">OpenSAMP_Launcher</string>
     <string name="SAMP_download_directory_name">Temp/</string>
 
-    <string name="SAMP_apk_url">https://drive.google.com/uc?export=download&amp;id=1wa1SYW81wfirLMQ2APnWcM-XNxnJxYZ3</string>
-    <string name="SAMP_data_url">https://www.dropbox.com/s/hti52zezmqy2snw/obb.zip?dl=1</string>
+    <string name="SAMP_apk_url">https://drive.usercontent.google.com/u/0/uc?id=14xmqmWsbODG-0YvxVPQWuszXKgHh1YPW&amp;export=download</string>
+    <string name="SAMP_data_url">https://drive.usercontent.google.com/u/0/uc?id=14xmqmWsbODG-0YvxVPQWuszXKgHh1YPW&amp;export=download</string>
 
     <string name="installer_status_none_SAMP_found">SAMP found</string>
     <string name="installer_status_none_SAMP_not_found">SAMP not found</string>

@@ -1,18 +1,20 @@
 package com.umnicode.samp_launcher.ui.home
 
+
 import android.content.Context
 import android.content.SharedPreferences
+import android.os.Build
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModel
 import com.umnicode.samp_launcher.LauncherApplication
 import com.umnicode.samp_launcher.R
 import com.umnicode.samp_launcher.UserConfig
@@ -20,11 +22,11 @@ import com.umnicode.samp_launcher.core.ServerConfig
 import com.umnicode.samp_launcher.core.ServerResolveCallback
 import com.umnicode.samp_launcher.core.ServerView
 import com.umnicode.samp_launcher.ui.widgets.playbutton.PlayButton
-import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
     private lateinit var rootView: View
 
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
@@ -40,7 +42,7 @@ class HomeFragment : Fragment() {
         val nicknameText: TextView = this.rootView.findViewById(R.id.nickname)
 
         val launcherApplication: LauncherApplication = activity?.application as LauncherApplication;
-        nicknameText.text = launcherApplication.userConfig.Nickname;
+        nicknameText.text = launcherApplication.userConfig?.Nickname;
 
         // Set port filter
         val portEditText: EditText = this.rootView.findViewById(R.id.port);
@@ -98,19 +100,18 @@ class HomeFragment : Fragment() {
         });
 
         // Setup play button
-        val playButton: PlayButton = this.rootView.findViewById(R.id.play_btn) as PlayButton;
-        playButton.SetOnSAMPLaunchCallback {
-            println("Launch SAMP");
-        }
+        val playButton = rootView.findViewById<Button>(R.id.play_btn)
+
 
         this.updateServerConfig();
         return this.rootView;
     }
 
+    @RequiresApi(Build.VERSION_CODES.M)
     private fun updateServerConfig(){
         val ipEdit:EditText = this.rootView.findViewById(R.id.ip);
         val portEdit:EditText = this.rootView.findViewById(R.id.port);
-        val userConfig:UserConfig = (activity?.application as LauncherApplication).userConfig;
+        val userConfig: UserConfig? = (activity?.application as LauncherApplication).userConfig;
 
         val IP:String = ipEdit.text.toString();
         val port:Int;
@@ -122,21 +123,23 @@ class HomeFragment : Fragment() {
         }
 
         // Resolve server
-        ServerConfig.Resolve(IP, port, userConfig.PingTimeout, this.context, object : ServerResolveCallback {
-            override fun OnFinish(OutConfig: ServerConfig?)  {
-                // Update ServerView
-                val serverView: ServerView = rootView.findViewById(R.id.server_view);
-                serverView.SetServer(OutConfig);
+        userConfig?.PingTimeout?.let {
+            ServerConfig.Resolve(IP, port, it, this.context, object : ServerResolveCallback {
+                override fun OnFinish(OutConfig: ServerConfig?)  {
+                    // Update ServerView
+                    val serverView: ServerView = rootView.findViewById(R.id.server_view);
+                    serverView.SetServer(OutConfig!!);
 
-                val playButton: PlayButton = rootView.findViewById(R.id.play_btn) as PlayButton;
-                playButton.SetServerConfig(OutConfig);
-            }
+                    val playButton: PlayButton = rootView.findViewById<Button>(R.id.play_btn) as PlayButton
+                    playButton.SetServerConfig(OutConfig);
+                }
 
-            override fun OnPingFinish(OutConfig: ServerConfig?) {
-                // Update ServerView (again)
-                val serverView: ServerView = rootView.findViewById(R.id.server_view);
-                serverView.SetServer(OutConfig);
-            }
-        });
+                override fun OnPingFinish(OutConfig: ServerConfig?) {
+                    // Update ServerView (again)
+                    val serverView: ServerView = rootView.findViewById(R.id.server_view);
+                    serverView.SetServer(OutConfig!!);
+                }
+            })
+        };
     }
 }
